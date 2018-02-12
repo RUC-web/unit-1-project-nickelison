@@ -1,0 +1,30 @@
+:root {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	font-size: 1.8em;
+	line-height: 1.6;
+}
+h2 {
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+
+@media screen and (min-width: 600px) {
+	.page {
+		max-width: 75vw;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.page {
+		max-width: 50vw;
+	}
+}
