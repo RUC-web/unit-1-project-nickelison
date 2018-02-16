@@ -1,30 +1,90 @@
 :root {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1.2em;
+	font-size: 1.01em;
 	line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Open Sans", sans-serif;
+html * {
+	box-sizing: border-box;
 }
 
+body {
+	background: #f5f7f9;
+	margin: 0;
+}
+	
+h1, h2 {
+	font-family: "Open Sans", sans-serif;
+}
 h1 {
 	font-size: 1.8em;
 	line-height: 1.6;
 }
 h2 {
 	font-size: 1.6em;
-	line-height: 1.4;
+	line-height: 1.5;
+}
+
+.content {
+	background: #fff;
 }
 
 @media screen and (min-width: 600px) {
-	.page {
+	.content {
+		margin: 0 auto;
 		max-width: 75vw;
+	}
+	.image {
+		float: left;
+		max-width: 75%;
 	}
 }
 
 @media screen and (min-width: 900px) {
-	.page {
+	.content {
 		max-width: 50vw;
 	}
+	.image {
+		float: left;
+		max-width: 75%;
+	}
+}
+
+.home {
+	background: url('img/0.jpg');
+	background-size: cover;
+	height: 75vh;
+
+}
+
+#book-title {
+	font-size: 2.5em;
+}
+#book-author {
+	font-size: 1.6em;
+	font-weight: 300;
+}
+#book-title, #book-author {
+	margin: 0;
+}
+
+.menu {
+	background: #fff;
+	box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+	padding: 1em;
+	width: 100%;
+}
+.menu ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+.menu ul li {
+	list-style-type: none;
+}
+
+.image {
+	max-width: 100%;
 }
