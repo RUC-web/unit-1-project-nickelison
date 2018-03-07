@@ -1,0 +1,2 @@
+Issues found:
+images on chapter pages have incorrect widths
